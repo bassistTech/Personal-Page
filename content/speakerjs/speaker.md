@@ -1,5 +1,5 @@
-<script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
-<script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+<script src="flot/jquery.js"></script>
+<script src="flot/jquery.flot.js"></script>
 
 <body>
     <h1>Speaker Modeling Program</h1>
