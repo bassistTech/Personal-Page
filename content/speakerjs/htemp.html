@@ -1,0 +1,35 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.axislabels.js"></script>
+	
+</head>
+
+<body>
+	<script>
+		$(function() {
+			function onDataReceived(series) {
+			
+				var options = {
+					axisLabels: {show: true},
+					xaxes: [{axisLabel: 'Time from present (h)'}],
+					yaxes: [{axisLabel: 'Temperature (F)'}]
+				};
+	
+				$.plot($("#excursion"), [series], options);
+			}
+
+			$.ajax({
+				url: "./temp.json",
+				type: "GET",
+				dataType: "json",
+				success: onDataReceived
+			});
+		});
+	</script>
+
+	<div id="excursion" style="width:600px;height:300px;"></div>
+
+</body>
+</html>

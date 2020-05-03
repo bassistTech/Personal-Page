@@ -1,0 +1,76 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.axislabels.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.time.js"></script>
+	
+</head>
+
+<body>
+	<script>		
+		function hi(t, r){ // heat index
+			var t2 = t*t;
+			var r2 = r*r;
+			var c_1 = -42.379;
+			var c_2 = 2.04901523;
+			var c_3 = 10.14333127;
+			var c_4 = -0.22475541;
+			var c_5 = -6.83783e-3;
+			var c_6 = -5.481717e-2;
+			var c_7 = 1.22874e-3;
+			var c_8 = 8.5282e-4;
+			var c_9 = -1.99e-6;
+			if ((t < 80) || (r < 40)) return t;
+			else return c_1 + c_2*t + c_3*r + c_4*t*r + c_5*t2 + c_6*r2 + c_7*t2*r + c_8*t*r2 + c_9*t2*r2;
+		}
+
+		var jsonurl = "http://api.openweathermap.org/data/2.5/forecast?q=madison,us";
+		$.get(jsonurl, function(data){
+			//alert(Object.keys(data));
+			var a = [];
+			var b = [];
+			var c = [];
+			var d = 0;
+			var tf = 0;
+			var rh = 0;
+			
+			var aoptions = {
+					axisLabels: {show: true},
+					//xaxes: [{axisLabel: 'Time from present (h)'}],
+					//yaxes: [{axisLabel: 'Temperature (F)'}]
+					xaxis: {axisLabel: "dd hh",
+						mode: "time",
+						timeformat: "%a %h"},
+					yaxis: {axisLabel: "Temperature (F)"}
+				};
+				
+			var boptions = {
+					axisLabels: {show: true},
+					//xaxes: [{axisLabel: 'Time from present (h)'}],
+					//yaxes: [{axisLabel: 'Rainfall (in/3h)'}]
+					xaxis: {axisLabel: "dd hh",
+						mode: "time",
+						timeformat: "%d %h"},
+					yaxis: {axisLabel: "Rainfall (in/3h)"}
+				};
+			var dtoffs = 5*60*60*1000;
+			for (var key in data["list"]) {
+				d = data["list"][key]["dt"]*1000 -  dtoffs;
+				tf = (data["list"][key]["main"]["temp"] - 272.15)*1.8 + 32;
+				rh = data["list"][key]["main"]["humidity"];
+				c.push([d, hi(tf, rh)]);
+				a.push([d, tf]);
+				if ("rain" in data["list"][key]) b.push([d, data["list"][key]["rain"]["3h"]/100]);
+				else b.push([d, 0]);
+			}
+			//alert(a[0]);
+			$.plot($("#temp"), [a, c], aoptions);
+			$.plot($("#rain"), [b], boptions);
+		});
+	</script>
+
+	<div id="temp" style="width:600px;height:300px;"></div>
+	<div id="rain" style="width:600px;height:300px;"></div>
+</body>
+</html>
