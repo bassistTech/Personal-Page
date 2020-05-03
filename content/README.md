@@ -6,14 +6,14 @@ a lightweight speaker for bass. It uses an Eminence Delta-Lite 2512-ii driver, i
 ported box, and weighs about 17 pounds. It has been my preferred speaker for "loud" gigs
 since then.
 
-[Theory of sealed and ported speakers](https://github.com/bassistTech/SpeakerTheory)
+[Theory of sealed and ported speakers](https://github.com/bassistTech/SpeakerTheory/SpeakerTheory.ipynb)
 
 This is my latest writeup on how speakers work. I will continue to refine and update this
 as I gain new knowledge, or if anybody finds a bug! It's not intended to be a design manual,
 but explains where the equations come from, that are the basis for speaker modeling
 programs.
 
-[Javascript speaker modeling program](speakerjs/speaker.html)
+[Javascript speaker modeling program](https://speakerjs/speaker.html)
 
 This is my attempt at an online speaker "design" program. Don't use it for anything serious.
 However, it provides a way of entering and sharing a design via a simple web link. It's
@@ -33,7 +33,7 @@ A complete preamp for bass instruments, with gain, bass, swept midrange, treble,
 is based on six discrete transistors. I built one of these by hand for fun, but have not decided to
 commercialize it -- yet!
 
-[GK Backline 600 review](GK-backline-600-review)
+[GK Backline 600 review](GK-Backline-600-Review)
 
 My technical review of the now-obsolete Gallien-Krueger Backline 600 bass amplifier
 
