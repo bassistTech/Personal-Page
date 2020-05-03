@@ -1,6 +1,6 @@
 # 12 inch bass speaker
 
-![Pic](speakpic.jpg)
+![Pic](speakpic.JPG)
 
 ## Drawings
 
