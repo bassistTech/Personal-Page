@@ -20,7 +20,7 @@ Bass</font></h3>
 height="506" name="graphics1"> </p>
 
 <p align="center"><a href="https://sites.google.com/site/hpftechllc/"><strong>
-HPF-Pre</strong></a></p>
+Are you looking for HPF-Pre? Click here</strong></a></p>
 
 <p align="center">&quot;You played great, as always. You have a
 natural ear, plus good knowledge, and your jokes are sometimes
