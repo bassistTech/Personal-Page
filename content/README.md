@@ -6,7 +6,7 @@ a lightweight speaker for bass. It uses an Eminence Delta-Lite 2512-ii driver, i
 ported box, and weighs about 17 pounds. It has been my preferred speaker for "loud" gigs
 since then.
 
-[Theory of sealed and ported speakers](https://github.com/bassistTech/SpeakerTheory/SpeakerTheory.ipynb)
+[Theory of sealed and ported speakers](https://github.com/bassistTech/SpeakerTheory/blob/master/SpeakerTheory.ipynb)
 
 This is my latest writeup on how speakers work. I will continue to refine and update this
 as I gain new knowledge, or if anybody finds a bug! It's not intended to be a design manual,
