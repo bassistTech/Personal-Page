@@ -41,10 +41,10 @@ standard jazz repertoire, and simply being easy to deal with.
 I moved to Madison in 1997, and have played with numerous
 local groups, on a regular or substitute basis.
 
-By day, I am a principal optical systems engineer at the
+By day, I am a senior staff scientist at the
 Madison outpost of Thermo Fisher Scientific Corp., the world
 leader in serving science. It's a great place to work, in a
-wonderful town. I have a PhD in physics and extensive experience
+wonderful town. I have a PhD in physics, 15 patents, and extensive experience
 in development of optical and electronic instrumentation systems.
 
 ---
