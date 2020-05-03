@@ -51,18 +51,15 @@ in development of optical and electronic instrumentation systems.
 
 ## Electronics and Speakers
 
-<h3><a name="projects"></a>Electronics and Speakers</h3>
-
 Related to music, I have a bit of an electronics hobby. As I
 accumulate results, if they are interesting, then I write them up
 to share. Often, I find that writing a brief report helps me
 critique my own ideas, and also attracts helpful comments that
-improve my knowledge. What follows are some of my recent
-projects.
+improve my knowledge. Most of the files in this repository are related
+to this interest.
 
-### Speaker Theory
+## What happens from here?
 
-What started out as a simple
-project to build a bass speaker turned into a quest to understand
-the physics of how speakers work. I have written up some of my
-notes to share with others who might be interested:
+This repository is mainly just a pile of files. I just created it, and am still
+working on organizing it. For now, all of the files are accessible by browsing the
+[content](content) folder. Gradually, I will make it more readable and add navigation.
