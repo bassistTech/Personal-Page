@@ -58,7 +58,7 @@ critique my own ideas, and also attracts helpful comments that
 improve my knowledge. Most of the files in this repository are related
 to this interest.
 
-## What happens from here?
+## Where's all the stuff?
 
 This repository is mainly just a pile of files. I just created it, and am still
 working on organizing it. For now, all of the files are accessible by browsing the
