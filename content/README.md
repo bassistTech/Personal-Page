@@ -13,7 +13,7 @@ as I gain new knowledge, or if anybody finds a bug! It's not intended to be a de
 but explains where the equations come from, that are the basis for speaker modeling
 programs.
 
-[Javascript speaker modeling program](https://speakerjs/speaker.html)
+[Javascript speaker modeling program]https://raw.githubusercontent.com/bassistTech/Personal-Page/master/content/speakerjs/speaker.html)
 
 This is my attempt at an online speaker "design" program. Don't use it for anything serious.
 However, it provides a way of entering and sharing a design via a simple web link. It's
